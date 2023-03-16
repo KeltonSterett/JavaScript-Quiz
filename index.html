@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +10,19 @@
 <body>
     <div>
         <div>
-            <h1>Java Quiz Challenge</h1>
-            <p>Test your knowledge of Java by clicking the Start Button!</p>
+            <h1>JavaScript Quiz</h1>
+            <p>Test your knowledge of JavaScript with this quiz by clicking the Start Button!</p>
+            <button id="start-btn">Start</button>
+            <button id="startPageHighScore" onclick="showHIGHSCORE()">High Scores</button>
         </div>
-
+        
         <div id="quiz">
             <div id="timer">Time left: </div>
                 <div id="questions"><p>This is where the Questions will appear</p></div>
+                <button id="a" onclick="checkanswer('a')">A</button>
+                <button id="b" onclick="checkanswer('b')">B</button>
+                <button id="c" onclick="checkanswer('c')">C</button>
+                <button id="d" onclick="checkanswer('d')">D</button>
             <div id="results"></div>    
     </div>
 
@@ -29,11 +35,11 @@
     <div id= "highscoresContainer"> 
         <h1>High Scores</h1>
         <div id="highscores"></div>
-
+        <button id="goBack">Go Back</button>
+        <button id="clear">Clear High Scores</button>
     </div>
     </div>
 
     <script src="assets/script.js"></script>
 </body>
-</html>
-  
+</html>  
