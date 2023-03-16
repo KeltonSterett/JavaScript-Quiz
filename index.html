@@ -9,9 +9,9 @@
 
 <body>
     <div>
-        <div>
+        <div id="firstPage">
             <h1>JavaScript Quiz</h1>
-            <p>Test your knowledge of JavaScript with this quiz by clicking the Start Button!</p>
+            <h2>Test your knowledge of JavaScript with this quiz by clicking the Start Button!</h2>
             <button id="start-btn">Start</button>
             <button id="startPageHighScore" onclick="showHIGHSCORE()">High Scores</button>
         </div>
@@ -23,8 +23,8 @@
                 <button id="b" onclick="checkanswer('b')">B</button>
                 <button id="c" onclick="checkanswer('c')">C</button>
                 <button id="d" onclick="checkanswer('d')">D</button>
-            <div id="results"></div>    
-    </div>
+            <div id="quiz-results"></div>    
+        </div>
 
     <div id="gameover">
         <h1>Game Over!</h1>
@@ -33,8 +33,7 @@
         <button id="submit">Submit</button>
     </div>
     <div id= "highscoresContainer"> 
-        <h1>High Scores</h1>
-        <div id="highscores"></div>
+        <div id="highscores">
         <button id="goBack">Go Back</button>
         <button id="clear">Clear High Scores</button>
     </div>

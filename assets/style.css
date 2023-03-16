@@ -1,0 +1,83 @@
+/* added background color to the root element */
+:root{
+    background-color: lightyellow;
+}
+
+p{
+      color: black;
+    text-shadow: 2px 2px lightblue;
+    text-align: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+h1{
+    color: black;
+    text-shadow: 2px 2px lightblue;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: black;
+    text-shadow: 2px 2px lightblue;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* gives buttons color and shapes with borders */
+button{
+    display: inline-block;
+    font-family: sans-serif;
+    background-color: lightblue;
+    border-radius: 10px;
+    border: 3px double lightyellow;
+    color: lightgoldenrodyellow;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px; 
+    margin-top: 3px;
+}
+ /* when hovering with mouse a light blue shawdow surrounds the button */
+button:hover{
+    box-shadow: 4px 3px 6px lightblue;
+}
+/* this centers and flexs the div on the first page */
+#firstPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#timer{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    color: lightgoldenrodyellow;
+    font-size: larger;
+    text-align: center;
+}
+
+/* #quiz {
+    display: none;
+}
+
+#quiz-results {
+    display: none;
+}
+
+#gameover {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+#highscores {
+    display: none;
+    width: 50%;
+    border: solid;
+    border-color: lightgoldenrodyellow;
+    border-bottom-style: groove;
+    padding-bottom: .3rem;
+    background: lightblue;
+} */
