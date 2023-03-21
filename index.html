@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <!-- added div to display a message and the heading/titles of buttons -->
     <div>
         <div id="firstPage">
             <h1>JavaScript Quiz</h1>
@@ -16,6 +17,7 @@
             <button id="startPageHighScore" onclick="showHIGHSCORE()">High Scores</button>
         </div>
         
+        <!-- added div for question pages with answers and place holder -->
         <div id="quiz">
             <div id="timer">Time left: </div>
                 <div id="questions"><p>This is where the Questions will appear</p></div>
@@ -25,16 +27,18 @@
                 <button id="d" onclick="checkanswer('d')">D</button>
             <div id="quiz-results"></div>    
         </div>
-
+<!-- added gameover page with final score and place for initals -->
+<!-- added submit button -->
     <div id="gameover">
         <h1>Game Over!</h1>
         <p>Your final score is: </p>
         <input type="text" id="initials" placeholder="Enter your initials">
         <button id="submit">Submit</button>
     </div>
+    <!-- added div for highscore page with clear button and go take quiz again button -->
     <div id= "highscoresContainer"> 
         <div id="highscores">
-        <button id="goBack">Go Back</button>
+        <button id="Take-Again">Take Again</button>
         <button id="clear">Clear High Scores</button>
     </div>
     </div>

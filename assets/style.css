@@ -57,8 +57,8 @@ button:hover{
     font-size: larger;
     text-align: center;
 }
-
-/* #quiz {
+/* added display none classes to hide them on the starting page */
+#quiz {
     display: none;
 }
 
@@ -80,4 +80,4 @@ button:hover{
     border-bottom-style: groove;
     padding-bottom: .3rem;
     background: lightblue;
-} */
+}
