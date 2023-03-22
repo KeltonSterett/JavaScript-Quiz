@@ -19,7 +19,7 @@ var highscoresDisplayScore = document.getElementById("highscores-score");
 var endGameBtn = document.getElementById("endGameBtns");
 var submitScoreBtns = document.getElementById("submit");
 
-// creating an array of objects for the questions, choices and correct answers
+// creating an array of objects for the questions, choices and answers
 var quizQuestions = [{
     // question property
 question: "What is the correct syntax for referring to an external script called 'xxx.js'?",
@@ -60,3 +60,41 @@ correctAnswer: "c"},
     correctAnswer: "a"},
 
 ];
+    // adding global variables because they will be used in multiple functions
+var finalQuestionIndex = quizQuestions.length;
+var currentQuestionIndex = 0;
+var timeLeft = 60;
+var timerInterval;
+var score = 0;
+var correct;
+
+// adding this function to cycle through the questions choices and answers
+function generateQuizQuestion() {
+    gameover.style.display = "none";
+    if (currentQuestionIndex === finalQuestionIndex) {
+        return showScore();
+    }
+    var currentQuestion = quizQuestions[currentQuestionIndex];
+    questions.innerHTML = "<p>" + currentQuestion.question + "</p>";
+    buttonA.innerHTML = currentQuestion.choiceA;
+    buttonB.innerHTML = currentQuestion.choiceB;
+    buttonC.innerHTML = currentQuestion.choiceC;
+    buttonD.innerHTML = currentQuestion.choiceD;
+};
+//  this 
+function startQuiz() {
+    gameover.style.display = "none";
+    firstPage.style.display = "none";
+    generateQuizQuestion();
+    
+    // start timer
+    timerInterval = setInterval(function() {
+        timeLeft--;
+        timer.textContent = "Time: " + timeLeft;
+        if(timeLeft === 0) {
+            clearInterval(timerInterval);
+            showScore();
+        }
+    }, 1000);
+    quizPage.style.display = "block";
+}

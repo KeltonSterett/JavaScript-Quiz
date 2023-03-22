@@ -97,17 +97,16 @@ button:hover{
 }
 
 #highscoreHeader{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: x-large;
-    color: lightgoldenrodyellow;
+    display:flex;
+    justify-content: space-around;
+    border-bottom-style: outset;
+    margin-bottom: .5rem;
     background-color: lightblue;
-    border-bottom-style: groove;
-    border-color: lightgoldenrodyellow;
-    padding-bottom: .3rem;
+    color: lightgoldenrodyellow;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-#highscoresContainer{
+/* fixed typo from last commit */
+#highscores-container{
     height: 100%;
     width: 100%;
     display: none;
