@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<div class="contatiner">
     <!-- added div to display a message and the heading/titles of buttons -->
     <div>
         <div id="firstPage">
@@ -26,20 +27,30 @@
                 <button id="c" onclick="checkanswer('c')">C</button>
                 <button id="d" onclick="checkanswer('d')">D</button>
             <div id="quiz-results"></div>    
-        </div>
+</div>
 <!-- added gameover page with final score and place for initals -->
 <!-- added submit button -->
     <div id="gameover">
-        <h1>Game Over!</h1>
+        <div id="final-score"></div>
+        <h1>Quiz Over!</h1>
         <p>Your final score is: </p>
         <input type="text" id="initials" placeholder="Enter your initials">
         <button id="submit">Submit</button>
     </div>
-    <!-- added div for highscore page with clear button and go take quiz again button -->
-    <div id= "highscoresContainer"> 
-        <div id="highscores">
-        <button id="Take-Again">Take Again</button>
-        <button id="clear">Clear High Scores</button>
+    <!-- added ids for JS manipulation and headers for highscore page -->
+    <div id= "highscores-container"> 
+    <div id="highscorePage">
+        <div id="highscoreHeader">
+            <h2>Intials</h2>
+            <h2>Score:</h2>
+        </div>
+        <div id="highscore-initials"></div>
+        <div id="highscore-score"></div>
+    </div>
+   <!-- added div for highscore page with clear button and take quiz again button  -->
+    <div id="endGameBtns">
+        <button id="playAgain" onclick="replayQuiz()">Take Quiz Again</button>
+        <button id="clearHighscore" onclick="clearScore()">Clear High Scores</button>
     </div>
     </div>
 
