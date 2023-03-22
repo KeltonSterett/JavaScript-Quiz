@@ -19,4 +19,44 @@ var highscoresDisplayScore = document.getElementById("highscores-score");
 var endGameBtn = document.getElementById("endGameBtns");
 var submitScoreBtns = document.getElementById("submit");
 
-    
+// creating an array of objects for the questions, choices and correct answers
+var quizQuestions = [{
+    // question property
+question: "What is the correct syntax for referring to an external script called 'xxx.js'?",
+// choices for the question
+choiceA: "<script href='xxx.js'>",
+choiceB: "<script name='xxx.js'>",
+choiceC: "<script src='xxx.js'>",
+choiceD: "<script file='xxx.js'>",
+// correct answer property
+correctAnswer: "c"},
+{
+question: "How do you write 'Hello World' in an alert box?",
+choiceA: "msgBox('Hello World');",
+choiceB: "alertBox('Hello World');",
+choiceC: "msg('Hello World');",
+choiceD: "alert('Hello World');",
+correctAnswer: "d"},
+{
+question: "How do you create a function in JavaScript?",
+choiceA: "function = myFunction()",
+choiceB: "function myFunction()",
+choiceC: "function:myFunction()",
+choiceD: "function myFunction()",
+correctAnswer: "b"},
+{
+question: "How do you call a function named 'myFunction'?",
+choiceA: "call myFunction()",
+choiceB: "call function myFunction()",
+choiceC: "myFunction()",
+choiceD: "function myFunction()",
+correctAnswer: "c"},
+{
+    question: "Iniside which HTML element do we put the JavaScript?",
+    choiceA: "<script>",
+    choiceB: "<js>",
+    choiceC: "<javascript>",
+    choiceD: "<scripting>",
+    correctAnswer: "a"},
+
+];
