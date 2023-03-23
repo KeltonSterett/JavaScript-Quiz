@@ -22,10 +22,10 @@
         <div id="quiz">
             <div id="timer">Time left: </div>
                 <div id="questions"><p>This is where the Questions will appear</p></div>
-                <button id="a" onclick="checkanswer('a')">A</button>
-                <button id="b" onclick="checkanswer('b')">B</button>
-                <button id="c" onclick="checkanswer('c')">C</button>
-                <button id="d" onclick="checkanswer('d')">D</button>
+                <button id="a" onclick="checkAnswer('a')">A</button>
+                <button id="b" onclick="checkAnswer('b')">B</button>
+                <button id="c" onclick="checkAnswer('c')">C</button>
+                <button id="d" onclick="checkAnswer('d')">D</button>
             <div id="quiz-results"></div>    
 </div>
 <!-- added gameover page with final score and place for initals -->
@@ -34,7 +34,7 @@
         <div id="final-score"></div>
         <h1>Quiz Over!</h1>
         <p>Your final score is: </p>
-        <input type="text" id="initials" placeholder="Enter your initials">
+        <input type="text" size ="40" id="initials" placeholder="Enter your initials">
         <button id="submit">Submit</button>
     </div>
     <!-- added ids for JS manipulation and headers for highscore page -->
@@ -44,8 +44,8 @@
             <h2>Intials</h2>
             <h2>Score:</h2>
         </div>
-        <div id="highscore-initials"></div>
-        <div id="highscore-score"></div>
+        <div id="highscores-initials"></div>
+        <div id="highscores-score"></div>
     </div>
    <!-- added div for highscore page with clear button and take quiz again button  -->
     <div id="endGameBtns">
