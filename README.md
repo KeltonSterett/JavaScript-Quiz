@@ -1,6 +1,7 @@
 # Kelton Steretts JavaScript-Quiz
 
-##Discription
+## Discription
+
 In this project we were tasked with creating a JavaScript quiz application with the following functions
 WHEN I click the start button
 THEN a timer starts and I am presented with a question
